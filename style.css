@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    float: right;
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    margin-top: 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: lightgray;
+    color: black;
+}
+.form{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-left: 80px;
+}
+
+
+
+.vertical-menu a {
+    color: black; /* Black text color */
+    display: flow-root; /* Make the links appear below each other */
+    display: flow-root; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    width: 252px;
+
+}
+
+.vertical-menu a.active {
+    background-color: lightseagreen; /* Add a green color to the "active/current" link */
+    color: white;
+}
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+    text-decoration: none;
+}
+
+.myform{
+    width: 70%;
+    height: 580px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding-left: 100px;
+    box-shadow: dimgrey;
+    font-size: 1.2em;
+}
+.myform input{
+    width: 200px;
+    height: 30px;
+
+}
+
+.submitBtn{
+    background-color: rgba(0,0,0,0.1);
+    background-color: gray;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    color: black;
+
+}
