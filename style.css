@@ -2,27 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Dosis',sans-serif;
+    font-size: 1.1em;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+nav.black{
+    background: rgba(0,0,0,0.8);
+    height: 80px;
+    padding: 10px 50px;
+    color: white;
+}
+nav .logo{
+    float: left;
 }
 
-ul{
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav ul{
     float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li{
     list-style: none;
-}
-ul li {
-    display: inline-block;
-    margin-top: 5px;
-}
-ul li a{
-    text-decoration: none;
     color: white;
-    padding: 5px 15px 5px 15px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
 }
-ul li a:hover{
-    background-color: lightgray;
+nav ul li a{
+    line-height: 80px;
+    color: white;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+nav.black ul li a{
+    color: #fff;
+    line-height: 60px;
+}
+nav ul li a.active,nav ul li a:hover{
     color: black;
+    background: white;
 }
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
 .form{
     background-color: white;
     width: 100%;
@@ -73,5 +116,4 @@ ul li a:hover{
     padding: 5px 10px 5px 10px;
     margin: 5px;
     color: black;
-
 }
