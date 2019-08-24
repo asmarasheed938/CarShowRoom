@@ -5,65 +5,143 @@
     font-family: 'Dosis',sans-serif;
     font-size: 1.1em;
 }
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    transition: .5s;
+
+.topnav{
+    background: black;
 }
-nav.black{
-    background: rgba(0,0,0,0.8);
-    height: 80px;
-    padding: 10px 50px;
-    color: white;
+.topnavbar .container{
+    margin-left: 107px !important;
 }
-nav .logo{
+.toggle-costume{
     float: left;
 }
-
-nav .logo img{
-    height: 80px;
-    transition: .5s;
-
+#navbarontop{
+    padding-left: 312px;
+    margin-bottom: 5px;
+    height:40px;
 }
-nav.black .logo img{
-    height: 60px;
-}
-nav ul{
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: flex;
 
-}
-nav ul li{
-    list-style: none;
+#navbarontop  li  a {
+    font-size: 1.1em;
+    padding-top: 0px;
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    padding-right: 10px!important;
+    margin-left: 34px;
     color: white;
 }
-nav ul li a{
-    line-height: 80px;
-    color: white;
-    padding: 2px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .5s;
-}
-nav.black ul li a{
-    color: #fff;
-    line-height: 60px;
-}
-nav ul li a.active,nav ul li a:hover{
+#navbarontop  li a:hover{
     color: black;
-    background: white;
+    background:white;
+    text-decoration: underline;
+    font-size: 1.1em;
+
+
+}nav.black{
+     background: rgba(0,0,0,0.8);
+     height: 80px;
+     padding: 10px 50px;
+     color: white;
+ }
+
+
+
+/*----------------- Navbar On Top Media screen -------------*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .topnavbar .container{
+        margin-left: 10px !important;
+    }
+    .logo{
+        position: absolute;
+        top:0px;
+        padding-top: 9px;
+        -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.5); /* FF3.5+ */
+        -ms-transform: scale(0.5); /* IE9 */
+        -o-transform: scale(0.5); /* Opera 10.5+ */
+        transform: scale(0.5);
+    }
+    .toggle-costume{
+        float: right;
+    }
+    #navbarontop{
+        padding-left: 0px;
+        padding-top: 26px;
+        height: 250px;
+    }
+    #navbarontop>li>a{
+        margin-left: 0px;
+        padding-left: 50px;
+        font-size: 13pt;
+        margin-bottom: 10px;
+
+    }
+    .navbar-default .navbar-nav .open .dropdowncostume > li > a {
+        text-align: left;
+        margin-left: 40px;
+    }
+    #upmenu{
+        margin-bottom: 15px;
+    }
 }
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .topnavbar .container{
+        margin-left: 10px !important;
+    }
+    .toggle-costume{
+        float: right;
+    }
+    #navbarontop>button{
+        margin-left:50px;
+
+    }
+    .logo{
+        position: absolute;
+        top:10px;
+        padding-top: 9px;
+        -webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.7); /* FF3.5+ */
+        -ms-transform: scale(0.7); /* IE9 */
+        -o-transform: scale(0.7); /* Opera 10.5+ */
+        transform: scale(0.7);
+    }
+    #navbarontop{
+        padding-left: 0px;
+        padding-top: 40px;
+        height: 250px;
+    }
+    #navbarontop>li>a{
+        margin-left: 0px;
+        padding-left: 50px;
+        font-size: 13pt;
+        margin-bottom: 10px;
+
+    }
+    #upmenu{
+        margin-bottom: 15px;
+    }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .topnavbar .container {
+        margin-left: 50px !important;
+    }
+    #navbarontop{
+        padding-left: 25%;
+    }
+    #navbarontop > li > a {
+        padding-bottom: 6px;
+        margin-bottom: 22px;
+        padding-left: 0px;
+        padding-right: 0px!important;
+        margin-left: 20px;
+
+    }
+}
+
+
+
+
 
 
 .form{
@@ -116,4 +194,40 @@ nav ul li a.active,nav ul li a:hover{
     padding: 5px 10px 5px 10px;
     margin: 5px;
     color: black;
+}
+.myIcons{
+    width: 33.33%;
+    float: left;
+    margin-left: 60px;
+}
+.contactinfo-col1{
+    text-align: center;
+    padding-left: 2px;
+}
+.fb{
+    background-color: #3a589b;
+    color:#fff;
+
+}
+.in{
+    background-color: #d6492f;
+    color:#fff;
+    margin-left: 6px;
+}
+.tw{
+    background-color: #32ccfe;
+    color:#fff;
+    margin-left: 6px;
+}
+.ln{
+    background-color: #007bb6;
+    color:#fff;
+    margin-left: 6px;
+}
+.social-icons i{
+    cursor: pointer;
+
+}
+footer{
+    font-size: 0.6em;
 }

@@ -4,6 +4,7 @@
     <title>Car ShowRoom</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css"><!--link for downloaded font awesome-->
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
@@ -50,28 +51,45 @@
                 $('nav').removeClass('black');
             }
         });
-
+        $(document).ready(function () {
+            $('[tool-tip-toggle="tooltip-demo"]').tooltip({
+                placement: 'bottom'
+            });
+        });
     </script>
 </head>
 <body>
 <header id="home">
-    <nav class=" fixed-top">
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li> &nbsp;
-                <li><a href="#services">Services</a></li>&nbsp;
-                <li><a href="#About">About</a></li>&nbsp;
-                <li><a href="#team">Team</a></li>&nbsp;
-                <li><a href="hotCars.html">Hot Cars</a></li>&nbsp;
-                <li><a href="#search" title="Search"><i class="fa fa-search"></i></a></li>
-                <li><a href="login.html" title="Login"><i class="fas fa-user-alt"></i></a></li>
-            </ul>
-
-            <div class="logo">
-                <img src="img/logo.jpg">
+    <div class="allcontain">
+        <!-- Navbar Up -->
+        <nav class="topnavbar navbar-default topnav bg-dark ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse"
+                            data-target="#upmenu" aria-expanded="false">
+                        <span class="sr-only"> Toggle navigaion</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#"><img src="img/logo.jpg" style="width: 70px; height: 70px;"
+                                                               alt="logo"></a>
+                </div>
             </div>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="upmenu">
+                <ul class="nav navbar-nav" id="navbarontop">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="hotCars.html">Hot Cars</a></li>
+                    <li><a href="#search" title="Search"><i class="fa fa-search "></i></a></li>
+                    <li><a href="login.html" title="Login"><i class="fas fa-user-alt "></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -216,6 +234,19 @@
         <div>
             <h3 class="display-4 text-white"> 03236806125</h3>
             <p class="text-white"> If u Want best Service Call us Now</p>
+            <div class="contactinfo-col1">
+                <b>Our Social Profiles</b><br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><span class="fab fa-facebook fb" tool-tip-toggle="tooltip-demo"
+                                                             data-original-title="Facebook"></span></a>
+                    <a href="https://www.twitter.com"><span class="fab fa-twitter tw" tool-tip-toggle="tooltip-demo"
+                                                            data-original-title="Twitter"></span></a>
+                    <a href="https://www.google.com"><span class="fab fa-google-plus in" tool-tip-toggle="tooltip-demo"
+                                                           data-original-title="Google"></span></a>
+                    <a href="https://www.linkedin.com"><span class="fab fa-linkedin ln" tool-tip-toggle="tooltip-demo"
+                                                             data-original-title="Linkedin"></span></a>
+                </div>
+            </div>
         </div>
     </article>
 
@@ -226,14 +257,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="content">
-                    <h1 class="text-center text-capitalize pt-5 font-weight-bold">Our Team</h1>
-                    <div class="myIcons" style="margin-left: 550px">
-                        <i class="fas fa-users fa-2x"></i>
+                    <h1 class="text-center text-capitalize  font-weight-bold">Our Team</h1>
+                    <div class="myIcons" style="margin-left: 550px;">
+                        <i class="fas fa-users fa-x pb-5"></i>
                     </div>
-                    <hr class="w-75 mx-auto pt-5">
-
                 </div>
-
+                <hr class="w-25 mx-auto pt-5 mt-5">
             </div>
         </div>
 
@@ -311,9 +340,91 @@
     </div>
 </section>
 
+
+<!--<p class="text-center bg-dark text-white"> @copyright Autocity.com</p>-->
 <footer>
-    <p class="text-center bg-dark text-white"> @copyright Autocity.com</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-item">
+                    <div class="about-us">
+                        <h2>About Us</h2>
+                        <p class="align_text">Gari Garage is a leading digital marketplace and solutions
+                            provider for the automotive
+                            industry that connects car shoppers with sellers. The Company empowers shoppers with the
+                            data, resources and digital tools needed to make informed buying decisions and
+                            seamlessly
+                            connect with automotive retailers.</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.drible.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-item">
+                    <div class="what-offer">
+                        <h2>Also Look At: </h2>
+                        <ul>
+                            <li><a href="#">Hot Cars</a></li>
+                            <li><a href="#">Audi Cars</a></li>
+                            <li><a href="#">Honda Cars</a></li>
+                            <li><a href="#">Toyota Corolla Cars</a></li>
+                            <li><a href="#">Suzuki Cars</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-item">
+                    <div class="our-gallery">
+                        <h2>Our Gallery</h2>
+                        <ul>
+                            <li><a href="#"><img src="assets/images/gallery_01.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_02.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_03.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_04.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_05.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_06.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_01.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_02.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_03.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_04.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_05.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/images/gallery_06.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer-item">
+                    <div class="quick-search">
+                        <h2>Quick Search</h2>
+                        <input type="text" class="footer-search" name="s" placeholder="Search..." value=""
+                               autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="sub-footer">
+                    <p>Copyright 2019. All rights reserved by: <a href="#">Gari Garage</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
